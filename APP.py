@@ -12,7 +12,7 @@ display_width, display_height = (800, 600)
 gameDisplay = pygame.display.set_mode((display_width, display_height))
 
 pygame.display.set_caption('Snake')
-icon = pygame.image.load("C:/Users/ASHWINI ABHISHEK/Pictures/snakeHead.png")
+icon = pygame.image.load("snakeHead.png")
 pygame.display.set_icon(icon)
 
 clock = pygame.time.Clock()
@@ -23,7 +23,7 @@ smallfont = pygame.font.SysFont("comicsansms", 25)
 medfont = pygame.font.SysFont("comicsansms", 50)
 largefont = pygame.font.SysFont("comicsansms", 80)
 
-img = pygame.image.load("C:/Users/ASHWINI ABHISHEK/Pictures/snakeHead.png")
+img = pygame.image.load("snakeHead.png")
 
 direction = "right"
 
@@ -185,7 +185,7 @@ def gameLoop():
             justStarted = False
         score(snakeLength-1)
 
-        apple = pygame.image.load("C:/Users/ASHWINI ABHISHEK/Pictures/apple.png")
+        apple = pygame.image.load("apple.png")
         #pygame.draw.rect(gameDisplay, red, [Applex, Appley, block_size, block_size])
         gameDisplay.blit(apple,(Applex,Appley))
 
